@@ -1,0 +1,14 @@
+{
+    "name": "Price Wise",
+    "version": "1.0.0",
+    "description": "price details",
+    "manifest_version": 3,
+    "action":{
+        "default_popup": "product.html",
+        "default_title": "PRICE_COMPARISON"
+    //     // "content_scripts":[
+    //         {
+    //           "js": ["index.js"]
+    // }]
+    }
+}
