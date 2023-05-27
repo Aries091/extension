@@ -2,7 +2,7 @@ document.body.style.border = "5px solid red";
 
 const fetch_data = (title, site) => {
     return new Promise((resolve, reject) => {
-    fetch('http://localhost:9500/product_links', {
+    fetch("http://20.212.240.130:9500/product_links", {
         method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -11,13 +11,14 @@ const fetch_data = (title, site) => {
         title: title,
         site: site
       })
-    }) .then(response => {
+    }).then(response => {
       return response.json();
     })
     .then(data => {
         resolve(data);
     })
-    .catch(_ => {
+    .catch(e => {
+        console.log(e);
         resolve([]);
     })
   });

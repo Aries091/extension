@@ -18,11 +18,12 @@
    "permissions": [
     "http://localhost/*",
     "https://localhost/*",
+    "http://20.212.240.130:9500/*",
+    "https://20.212.240.130:9500/*",
+    "<all_urls>",
     "webRequest",
     "webRequestBlocking",
     "activeTab",
     "scripting"
   ]
-
 }
-
